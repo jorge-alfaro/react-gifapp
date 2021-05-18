@@ -6,7 +6,7 @@ export default function GifGrid({ category }) {
 
   return (
     <>
-      <h3 className="animate__animated animate__bounceIn">~ {category} ~</h3>
+      <h3 className="animate__animated animate__bounceIn">- {category} -</h3>
       {loading && (
         <p className="animate__animated animate__swing">Loading...</p>
       )}

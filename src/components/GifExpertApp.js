@@ -7,15 +7,20 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h2>Buscador de GIFs</h2>
-      <AddCategory setCategories={setCategories} />
-      {/* <hr /> */}
+      <div className="block-title">
+        <h2>Search GIFs</h2>
+        {/* <img src="/assets/h.png" alt="media" className="img-top" /> */}
+      </div>
+      <div className="content">
+        <AddCategory setCategories={setCategories} />
+        <hr />
 
-      <ol>
-        {categories.map((category) => (
-          <GifGrid key={category} category={category} />
-        ))}
-      </ol>
+        <ol>
+          {categories.map((category) => (
+            <GifGrid key={category} category={category} />
+          ))}
+        </ol>
+      </div>
     </>
   );
 };

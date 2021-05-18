@@ -16,15 +16,17 @@ export const AddCategory = ({ setCategories }) => {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      {/* <h1>{inputValue}</h1> */}
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleInputChange}
-        placeholder="Buscar..."
-      />
-    </form>
+    <div className="container-fluid">
+      <form onSubmit={handleSubmit} className="d-flex">
+        <input
+          type="search"
+          value={inputValue}
+          onChange={handleInputChange}
+          placeholder="Search..."
+          className="form-control me-2"
+        />
+      </form>
+    </div>
   );
 };
 

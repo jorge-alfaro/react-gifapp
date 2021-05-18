@@ -6,11 +6,7 @@ body {
   padding: 20px;
   display: grid;
   margin: 0;
-  background-image: radial-gradient(
-    circle,
-    rgb(190, 123, 123),
-    rgb(88, 18, 18)
-  );
+  background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(0, 0, 0));
 }
 
 h2 {
@@ -19,10 +15,21 @@ h2 {
   letter-spacing: -1px;
   background-color: black;
   color: white;
+  display: inline-block;
 }
-
+.block-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+}
+.img-top {
+  display: inline;
+  width: 25%;
+}
 input {
-  width: 100%;
+  width: 40%;
   font-size: 1.3rem;
   background: #fff;
   border: none;
@@ -31,22 +38,19 @@ input {
   margin-bottom: 25px;
 }
 
-/* .card-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
+.content {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-react-5f0f7.appspot.com/o/i.png?alt=media&token=d6fb8ff3-f401-4cd4-8a74-07186ce26200");
+  background-size: contain;
+}
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 5px;
   padding: 1rem;
   align-items: center;
-  /* justify-content: center; */
-  /* grid-auto-flow: dense; */
-  /* place-content: center; */
 }
 .card {
+  display: block;
   align-items: center;
   border: 1px solid black;
   border-radius: 10px;
@@ -72,11 +76,9 @@ h3 {
   font-size: 5rem;
   text-align: center;
   height: 10vh;
-  /* line-height: 90vh; */
   color: #fcedd8;
   margin: 10px 0 25px 0;
   font-family: "Niconne", cursive;
   font-weight: 700;
-  text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032, 15px 15px 0px #46b59b;
-  /* 20px 20px 0px #017e7f, 25px 25px 0px #052939, 30px 30px 0px #c11a2b; */
+  text-shadow: 5px 5px 0px #eb452b, 10px 10px 0px #efa032;
 }
